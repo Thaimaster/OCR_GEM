@@ -1,0 +1,27 @@
+
+1. Viết class mới chứa các chức năng cho training này.
+2. Hàm thực hiện train mô hình ở một process song song với main process Done!
+3. Thông tin training: train_loss, steps, epochs, val_loss, val_accuracy 
+4. Hàm stop training
+5. Viết hàm validation trong quá trình training để tìm ra checkpoint tốt nhất. recommend  worsed img
+6. debug class Hyperparams - Done!
+
+
+Câu hỏi;
+1. Làm sao để biết ng dùng nhấn nút stop ở process nào, từ đó dò qua list_proc để terminate()
+2. phần train chưa có phần validate, có tính đến TH overfit và UNDERFIT ko?
+3. ICloader load và transform cùng lúc:
+
+Solution:
+3. Check dataloader
+	Néu thứ tự load ko đổi
+	train = 80% icloader(transform=True)
+	val = 20% icloader(transform=False)
+*Note:
+1. Pep8 convention - style code python 
+2. classname: Viet hoa chu cai dau
+3. Trong ham stop --> clean GPU ram
+4. acc, loss --> attribute of class, and visualize it
+5. add dir folder train, val to main
+6. Share status training
+7. Val loại bỏ augmentation: randomcrop,...
