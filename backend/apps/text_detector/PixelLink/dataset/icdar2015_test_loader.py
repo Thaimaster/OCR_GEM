@@ -10,7 +10,7 @@ import torchvision.transforms as transforms
 import torch
 from pixel_link import cal_gt_for_single_image
 import config
-from apps.curvilinear_projection.curvilinearProjection import dewarp
+#from apps.curvilinear_projection.curvilinearProjection import dewarp
 # ic15_root_dir = '/home/gem/phucph/PixelLink.pytorch/dataset/
 ic15_root_dir = 'dataset/'
 ic15_test_data_dir = ic15_root_dir + 'diff_images/'
